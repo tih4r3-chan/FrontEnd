@@ -10,3 +10,6 @@ def login(request):
 
 def home(request):
     return render(request,'home.html')
+
+def inicio(request):
+    return render(request,'inicio.html')

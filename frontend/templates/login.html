@@ -27,7 +27,7 @@
     });
 
     function goBack() {
-        window.history.back();
+        window.location.href = 'http://127.0.0.1:3000/';
     }
 
     function sendDataToBackend() {
@@ -50,7 +50,7 @@
             console.log(data);
             alert('¡Inicio de sesión exitoso!');
             // Redirige a la página principal (ajusta la ruta según tu aplicación)
-            //window.location.href = '/';
+            window.location.href = 'http://127.0.0.1:3000/inicio/';
         })
         .catch(error => {
             console.error('Error:', error);
