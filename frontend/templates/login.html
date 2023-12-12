@@ -32,8 +32,8 @@
 
     function sendDataToBackend() {
         const backendUrl = 'http://127.0.0.1:8000/';
-        const backendEndpoint = 'login/';
-
+        const backendEndpoint = 'cuenta/login/';
+        
         const formData = new FormData(document.getElementById('login'));
 
         fetch(`${backendUrl}${backendEndpoint}`, {
