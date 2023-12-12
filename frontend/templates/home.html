@@ -5,25 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href='{% static "css/estilo.css" %}' type="text/css"/>
-    <title>Document</title>
+    <title>Home</title>
 </head>
 <body>
-    <h2 class="title">Centro medico galenos</h2>
-    <div class="container" >
-        <div class="column">
-            <h1 class="text">SU SALUD EN <br >NUESTRAS MANOS</h1>
-            <div class="column">
-                <button class="boton">
-                    <a class="link" href="{% url 'login' %}">Iniciar sesión</a>
-                </button>
-                <button class="boton">
-                    <a class="link" href="{% url 'registro' %}">Crear Cuenta</a>
-                </button>
+    <header>
+        <nav>
+            <div>Centro Médico Galenos</div>
+            <ul>
+                <li><a href="{% url 'registro' %}">Servicios</a></li>
+                <li><a href="{% url 'registro' %}">Especialidades</a></li>
+                <li><a href="{% url 'registro' %}">Sobre nosostros</a></li>
+                <li><a href="{% url 'registro' %}">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <div class="container">
+            <div class="container__left">
+                <p>Cuidado y atención rápida a adultos mayores</p>
+                <h1>Tu salud en nuestras manos</h1>
+                <p>Los mejores especialistas con las mejores especialidades. Cuida tu salud y la de tu familia acá en el Centro Médico Galenos</p>
+                <div>
+                    <button class="boton">
+                        <a class="link" href="{% url 'login' %}">Iniciar sesión</a>
+                    </button>
+                    <button class="boton">
+                        <a class="link" href="{% url 'registro' %}">Crear Cuenta</a>
+                    </button>
+                </div>
+            </div>
+            <div class="container__right">
+                <img src='https://i.postimg.cc/hjndbKnx/grupo-doctores.png' alt="doctores">
             </div>
         </div>
-        <div class="column">
-            <img src='https://i.postimg.cc/bNnYtbwh/centro-MEd.webp' width="450" height="450" alt="" class="img">
-        </div>
-    </div>
+    </header>
 </body>
 </html>
