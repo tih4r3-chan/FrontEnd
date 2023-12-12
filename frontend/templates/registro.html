@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Example</title>
+</head>
+<body>
+
+<h1>Frontend Example</h1>
+<button onclick="getDataFromBackend()">Obtener datos del backend</button>
+
+<script>
+function getDataFromBackend() {
+    // Supongamos que esta es la URL de tu backend
+    const backendUrl = 'http://127.0.0.1:8000';
+    // Supongamos que esta es la ruta específica que deseas llamar en tu backend
+    const backendEndpoint = '';
+
+  // Realiza una solicitud GET al backend
+    fetch(`${backendUrl}${backendEndpoint}`)
+    .then(response => {
+        if (!response.ok) {
+            throw new Error(`Error en la solicitud: ${response.statusText}`);
+        }
+        return response.json();
+    })
+    .then(data => {
+        // Maneja los datos devueltos por el backend
+        console.log(data);
+        alert(`Datos recibidos del backend: ${JSON.stringify(data)}`);
+    })
+    .catch(error => {
+        // Maneja los errores de la solicitud
+        console.error('Error:', error);
+        alert(`Error en la solicitud al backend: ${error.message}`);
+    });
+}
+</script>
+
+</body>
+</html>
