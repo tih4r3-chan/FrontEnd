@@ -25,7 +25,8 @@ SECRET_KEY = 'django-insecure-vugy!=-yh7^zkose!%ca+odd2$awqck4do3es4m1+w@7z!^49_
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', '52.72.95.81']
+
 
 
 # Application definition
@@ -74,10 +75,22 @@ WSGI_APPLICATION = 'frontend_project.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
+
+'default': {
+    'ENGINE': 'django.db.frontend.mysql',
+    'NAME': 'api_frontend',
+    'USER': 'mysql',
+    'PASSWORD': 'password',
+    'HOST': 'mysql_db',
+    'PORT': '3306',
+    'OPTIONS': {
+        'sql_mode': 'traditional',
     }
 }
 
