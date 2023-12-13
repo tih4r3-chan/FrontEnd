@@ -16,10 +16,53 @@
                     <li class="list__item"><a class="list__link" href="">Especialidades</a></li>
                     <li class="list__item"><a class="list__link" href="">Sobre nosostros</a></li>
                     <li class="list__item"><a class="list__link" href="">Contacto</a></li>
-                    <li class="list__item"><a class="list__link" href="">Cerrar Sesión</a></li>
+                    <button onclick="logout()" class="btn">Cerrar Sesión</button>
                 </ul>
             </div>
         </nav>
     </header>
+
+<script>
+    document.getElementById('logoutLink').addEventListener('click', function (event) {
+        event.preventDefault(); 
+        logout();
+    });
+
+    async function logout() {
+        try {
+            function getCookie(username) {
+                let cookieValue = null;
+                if (document.cookie && document.cookie !== '') {
+                    const cookies = document.cookie.split(';');
+                    for (let i = 0; i < cookies.length; i++) {
+                        const cookie = cookies[i].trim();
+                        if (cookie.substring(0, username.length + 1) === (username + '=')) {
+                            cookieValue = decodeURIComponent(cookie.substring(username.length + 1));
+                            break;
+                        }
+                    }
+                }
+                return cookieValue;
+            }
+            const csrftoken = getCookie('csrftoken');  
+            const response = await fetch('http://127.0.0.1:8000/logout/cerrar/', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': 'Bearer ' + YOUR_ACCESS_TOKEN, 
+                    'X-CSRFToken': csrftoken,
+                }
+            });
+            if (response.ok) {
+                window.location.href = 'http://127.0.0.1:3000/';
+            } else {
+                console.error('Error al cerrar sesión:', response.statusText);
+            }
+        } catch (error) {
+            console.error('Error de red:', error);
+        }
+    }
+</script>
+    
 </body>
 </html>

@@ -48,3 +48,14 @@ a{
 .list__link:hover{
     color: #898cda;
 }
+
+.btn{
+    padding: 10px;
+    background-color: #1848a0;
+    color: #fff;
+}
+
+.btn:hover{
+    background-color: #7094d7;
+    color: #2b2a2a;
+}
