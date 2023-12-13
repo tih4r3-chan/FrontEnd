@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href='{% static "css/estilo.css" %}' type="text/css"/>
+    <link rel="stylesheet" href='{% static "css/home.css" %}' type="text/css"/>
     <title>Home</title>
 </head>
 <body>
     <header>
         <nav class="navbar">
+            <div class="logo">Centro Médico Galenos</div>
             <div class="menu__rigth">
-                <div class="logo">Centro Médico Galenos</div>
                 <ul class="navbar__list">
                     <li class="list__item"><a class="list__link" href="{% url 'registro' %}">Servicios</a></li>
                     <li class="list__item"><a class="list__link" href="{% url 'registro' %}">Especialidades</a></li>
@@ -24,15 +24,15 @@
         <div class="container">
             <div class="container__left">
                 <div class="container__text">
-                    <p>Cuidado y atención rápida a adultos mayores</p>
-                    <h1>Tu salud en nuestras manos</h1>
-                    <p>Los mejores especialistas con las mejores especialidades. Cuida tu salud y la de tu familia acá en el Centro Médico Galenos</p>
+                    <p class="sub__title">Cuidado y atención rápida a adultos mayores</p>
+                    <h1 class="title">Tu salud en nuestras manos</h1>
+                    <p class="texto_p">Los mejores especialistas con las mejores especialidades. Cuida tu salud y la de tu familia acá en el Centro Médico Galenos</p>
                 </div>
                 <div>
-                    <button class="boton">
+                    <button class="btn">
                         <a class="link" href="{% url 'login' %}">Iniciar sesión</a>
                     </button>
-                    <button class="boton">
+                    <button class="btn">
                         <a class="link" href="{% url 'registro' %}">Crear Cuenta</a>
                     </button>
                 </div>
