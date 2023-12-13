@@ -107,10 +107,55 @@ a{
     justify-content: space-around;
 }
 
-.left-div {
-    padding: 20px;
+.contenedor3{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
 }
 
-.right-div {
+.left-div .links{
+    font-size: 30px;
+}
+
+.right-div .links{
+    font-size: 30px;
+}
+
+.contenedor-box {
+    display: flex;
+    justify-content: space-between;
+    width: 80%; 
+    margin: 0 auto; 
+    text-align: center;
+}
+
+.box {
+    width: 23%;
     padding: 20px;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.box img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.text-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+}
+
+.about{
+    align-items: center;
+    text-align: center;
 }

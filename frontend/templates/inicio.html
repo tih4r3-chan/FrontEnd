@@ -14,9 +14,9 @@
             <div class="menu__rigth">
                 <ul class="navbar__list">
                     <li class="list__item"><a class="list__link" href="#especialidades">Especialidades</a></li>
-                    <li class="list__item"><a class="list__link" href="">Centros</a></li>
-                    <li class="list__item"><a class="list__link" href="">Sobre nosostros</a></li>
-                    <li class="list__item"><a class="list__link" href="">Contacto</a></li>
+                    <li class="list__item"><a class="list__link" href="#centros">Centros</a></li>
+                    <li class="list__item"><a class="list__link" href="#about">Sobre nosostros</a></li>
+                    <li class="list__item"><a class="list__link" href="mailto:centromedicogalenos@gmail.com?subject=Contacto">Contacto</a></li>
                     <li class="list__item"><a class="list__link" href='{% url "home" %}'>Cerrar Sesión</a></li>
                     <!-- <button id="logoutLink" class="btn logout-btn">Cerrar Sesión</button> -->
                 </ul>
@@ -44,19 +44,97 @@
                 Debido a ala gran demanda por parte de nuestros pacientes, Centro Médico Galenos se encuentra 
                 potenciando diversas especialidades en los distintos centros que tenemos para seguir brindando acceso, calidad y calidez.
             </p>
-            <div class="left-div">
-                <ul>
-                    <li>Neurología</li>
-                    <li>Oftalmología</li>
-                    <li>Ototrrinolaringología</li>
-                    <li>Pedíatria</li>
-                    <li>Dermatología</li>
-                </ul>
+            <div class="contenedor3">
+                <div class="left-div">
+                    <ul>
+                        <li class="links">Neurología</li>
+                        <li class="links">Oftalmología</li>
+                        <li class="links">Ototrrinolaringología</li>
+                        <li class="links">Pedíatria</li>
+                        <li class="links">Dermatología</li>
+                    </ul>
+                </div>
+                <div class="right-div">
+                    <ul>
+                        <li class="links">Gastroenterologia</li>
+                        <li class="links">Neurología</li>
+                        <li class="links">Ginecología yObstetricia</li>
+                        <li class="links">Urología</li>
+                        <li class="links">Neurocirugísa</li>
+                    </ul>
+                </div>
             </div>
-            <div class="right-div">
-                <!-- Contenido del div derecho -->
-                Derecha
+            <p class="texto1-2">Consulta por mas especialidades</p>
+
+            <section id="centros" class="centros">
+                <h1 class="texto1">Nuestros Centros</h1>
+            <p class="texto1-2">
+                Contamos con centros alrededor de todo Chile.
+            </p>
+            <div class="contenedor-box container">
+                <div class="box">
+                    <img src='https://i.postimg.cc/25GjnR79/cmls52chica.jpg' alt="Imagen 1">
+                    <div class="text-overlay">Centro Médico Galenos - Viña del mar</div>
+                </div>
+                <div class="box">
+                    <img src='https://i.postimg.cc/t4MGbqDj/inmuno-serena.jpg' alt="Imagen 2">
+                    <div class="text-overlay">Centro Médico Galenos - Villa Alemana</div>
+                </div>
+                <div class="box">
+                    <img src='https://i.postimg.cc/MHN1xjcB/VITALCUBE-Img-1-Featured.jpg'alt="Imagen 3">
+                    <div class="text-overlay">Centro Médico Galenos -San Antonio</div>
+                </div>
+                <div class="box">
+                    <img src='https://i.postimg.cc/1tT8N19h/centro-medico-del-bajio-1-627418930.jpg' alt="Imagen 4">
+                    <div class="text-overlay">Centro Médico Galenos - O'Higgins</div>
+                </div>
             </div>
+            <div class="contenedor-box container">
+                <div class="box">
+                    <img src='https://i.postimg.cc/MG6dKNZm/Fachada.jpg' alt="Imagen 1">
+                    <div class="text-overlay">Centro Médico Galenos - La Serena</div>
+                </div>
+                <div class="box">
+                    <img src='https://i.postimg.cc/yYnJCb5H/foto-web-ppal.jpg' alt="Imagen 2">
+                    <div class="text-overlay">Centro Médico Galenos -Santiago</div>
+                </div>
+                <div class="box">
+                    <img src='https://i.postimg.cc/bNvykN67/Centro-Medico-Cardimed-DESTACADA.jpg' alt="Imagen 3">
+                    <div class="text-overlay">Centro Médico Galenos - Villarica</div>
+                </div>
+                <div class="box">
+                    <img src='https://i.postimg.cc/qMtfptDv/medisur1.jpg' alt="Imagen 4">
+                    <div class="text-overlay">Centro Médico Galenos - Temuco</div>
+                </div>
+            </div>
+            </section>
+
+            <section class="about" id="about">
+                <h1 class="texto1">Sobre Nosotros</h1>
+                <p class="texto1-2">En Centro Médico Galenos, nuestro compromiso es brindar atención médica de la más 
+                    alta calidad con un enfoque centrado en el bienestar integral de cada paciente. Nos enorgullece ser más que un centro médico; 
+                    somos un equipo dedicado de profesionales de la salud comprometidos con su salud y bienestar.
+                En el Centro Médico Galenos, nuestra misión es clara: proporcionar cuidados de salud compasivos y comprensivos para mejorar 
+                la calidad de vida de nuestros pacientes. Nos esforzamos por ser un faro de esperanza y apoyo en la búsqueda de la salud y la felicidad. 
+                Desde el momento en que pisa nuestras instalaciones, queremos que se sienta bienvenido, respetado y seguro.
+                Nos especializamos en abordar las necesidades de salud de manera integral, reconociendo que la salud va más allá de la mera ausencia 
+                de enfermedad. Nuestro equipo de médicos altamente capacitados y personal de apoyo está dedicado a tratar a cada individuo con empatía y 
+                respeto, centrándose en su bienestar físico, mental y emocional.
+                Estamos arraigados en la comunidad que servimos, y nuestro compromiso va más allá de las paredes de nuestra clínica. 
+                Participamos activamente en iniciativas de salud comunitaria, eventos educativos y 
+                esfuerzos de concientización para contribuir al bienestar general de la sociedad.
+                Detrás de cada tratamiento y diagnóstico hay un equipo apasionado de profesionales de la salud. En el Centro Médico Galenos, contamos 
+                con médicos, enfermeras y personal administrativo dedicados que 
+                trabajan juntos para proporcionar atención de calidad y fomentar un ambiente de confianza.
+                En resumen, en Centro Médico Galenos, su salud es nuestra principal prioridad. Estamos comprometidos a ser su socio en 
+                el viaje hacia una vida más saludable y plena. Siempre buscamos superar sus expectativas y brindarle la atención médica 
+                que se merece.
+                Gracias por confiar en nosotros para su atención médica. Estamos aquí para usted en cada paso del camino.
+                </p>
+                <div class="imagen">
+                    <img src='https://i.postimg.cc/2j2hFywm/slide-2.png' alt="">
+                </div>
+            </section>
         </section>
     </div>
 
