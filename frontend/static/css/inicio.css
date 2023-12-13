@@ -53,6 +53,7 @@ a{
     padding: 10px;
     background-color: #1848a0;
     color: #fff;
+    cursor: pointer;
 }
 
 .btn:hover{
