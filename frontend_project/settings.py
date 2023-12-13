@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-vugy!=-yh7^zkose!%ca+odd2$awqck4do3es4m1+w@7z!^49_
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', '52.72.95.81']
+ALLOWED_HOSTS = ['52.72.95.81','127.0.0.1']
 
 
 
